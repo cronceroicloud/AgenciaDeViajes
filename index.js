@@ -4,7 +4,7 @@ import db from './config/db.js';
 
 
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 10000;
 
 
 //conectar BBDD
