@@ -6,8 +6,8 @@ dotenv.config()
 //Debe estar este import sino no va
 //NUNCA USES USER PORQUE ES UNA VARIABLE DE ENTORNO YA DEFINIDA
 
-const db=new Sequelize('ccrp06_agencia','alumno', 'AlumnoSanz$1', {
-    host: 'iasanz.synology.me',
+const db=new Sequelize(process.env.DATABASE, process.env.USUARIO, process.env.PASS, {
+    host: process.env.SERVER,
     port: '3306',
     dialect: 'mysql',
     define: {
